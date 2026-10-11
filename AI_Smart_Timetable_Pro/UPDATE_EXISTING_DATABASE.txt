@@ -1,0 +1,20 @@
+IMPORTANT — KEEP YOUR EXISTING STUDENT DATA
+
+Your current project folder is expected to contain smart_timetable.db.
+This upgraded version uses the same users/timetables tables and the same columns.
+
+Safe update steps on Windows:
+1. Stop the running website in PowerShell with Ctrl+C.
+2. Make a backup copy of smart_timetable.db first.
+3. Extract AI_Smart_Timetable_Pro.zip.
+4. Open the extracted AI_Smart_Timetable_Pro folder.
+5. Copy app.py, requirements.txt, templates, and static into your EXISTING project folder:
+   C:\Users\bondb\Downloads\AI_Smart_Timetable_Student_Admin_SQLite\AI_Smart_Timetable_SQLite
+6. When Windows asks, replace the old app.py, requirements.txt, templates and static files.
+7. DO NOT copy a database file from the ZIP and DO NOT delete/replace your existing smart_timetable.db.
+8. In PowerShell, activate the existing .venv if needed and run:
+   python -m pip install -r requirements.txt
+   python app.py
+9. Open http://127.0.0.1:5000 and sign in with your existing admin/student accounts.
+
+If you choose to run the project in a new folder instead, copy your backed-up old smart_timetable.db into that new folder next to app.py before starting it.

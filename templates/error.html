@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block title %}{{ code }} — SmartTime{% endblock %}{% block content %}<div class="empty-state error-state"><span class="empty-icon">{{ code }}</span><h3>{{ message }}</h3><p>Try returning to your workspace.</p><a class="btn btn-primary" href="{{ url_for('index') }}">Go home <span>→</span></a></div>{% endblock %}
